@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # Load Llama model from Hugging Face (or another causal LM model)
 # Here, we load it once and use it throughout the interaction.
-model_name = "meta-llama/Llama-2-7b"  
+model_name = "meta-llama/Meta-Llama-Guard-2-8B"  
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
